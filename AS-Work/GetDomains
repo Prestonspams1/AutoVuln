@@ -1,0 +1,2 @@
+#!/bin/bash
+cat Crackmap | awk '{print $12}' | sed -e 's/(domain:\(.*\))/\1/'
