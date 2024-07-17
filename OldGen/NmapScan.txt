@@ -1,0 +1,4 @@
+nmap -sSC -p 1-65535 --open -iL targets.txt -oA Syn_Checks
+nmap -sU --open -iL targets.txt -oA UDP
+cd /usr/share/responder
+python3 Responder.py -I eth0 -wFb
